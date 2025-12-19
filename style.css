@@ -113,6 +113,7 @@ html {
     display: flex;
     gap: 51px;
 }
+/* Конец навигации мини-игр */
 
 /* Описание игр */
 
@@ -137,6 +138,7 @@ html {
 }
 
 .about-games{
+    position: relative;
     max-width: 1440px;
     height: 1470px;
     background-color: #202027;
@@ -173,6 +175,8 @@ html {
 .about-games__cards{
     display: flex;
     gap: 32px;
+    position: relative;
+    z-index: 2;
 }
 
 .about-games__card{
@@ -235,3 +239,12 @@ html {
     font-weight: 700;
     font-size: 32px;
 }
+
+.star {
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    z-index: 1;
+}
+
+

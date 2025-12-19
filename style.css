@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+/* Звезды */
+
+.top__star {
+    position: absolute;
+}
+
+/* Positions */
+.top__star-1 { top: 10%; left: 10%; }
+.top__star-2 { top: 18%; left: 5%; }
+.top__star-3 { top: 65%; left: 65%; }
+.top__star-4 { top: 72%; left: 75%; }
+/* Конец звезд */
+
+
+/* Верхняя часть сайта */
+ .top {
+  max-width: 1440px;
+  height: 710px;
+  background-image: url(./img/fon.jpg);
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* левая и правая часть */
+  background: #dfff8f;
+  position: relative;
+  overflow: hidden;
+ }
+
+ .top__content{
+    padding-top: 196px;
+    width: 769px;
+ }
+
+.top__decor img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  object-fit: cover;
+}
+
+ .top__text{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 64px;
+    padding-bottom: 24px;
+ }
+
+ .top__description{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    padding-bottom: 48px;
+ }
+
+ .top__button-custom{
+    display: inline-block;
+    width: 247px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    line-height: 66px;
+    border-radius: 60px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+ }
+
+ .top__button-custom:hover{
+        background-color: rgb(0, 0, 0);
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+}
+
+/* Конец верхней части сайта */
+
+
+/* Навигация мини-игр */
+
+.mini-games-nav{
+    background-color: #BCEC30;
+    height: 90px;
+    display: flex;
+}
+
+.mini-games-nav__item{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 30px;
+    color: #000;
+    text-decoration: none;
+    padding-right: 51px;
+}
+
+.mini-games-nav__container{
+    padding-top: 24px;
+    display: flex;
+    gap: 51px;
+}
+
+/* Описание игр */
+
+.about-games__star {
+  position: relative;
+}
+
+.about-games__star img {
+  position: absolute;
+  top: 770px;
+  left: 25px;
+}
+
+.about-games__star-2 {
+  position: relative;
+}
+
+.about-games__star-2 img {
+  position: absolute;
+  top: 822px;
+  left: 40px;
+}
+
+.about-games{
+    max-width: 1440px;
+    height: 1470px;
+    background-color: #202027;
+}
+
+.about-games__container{
+    padding-top: 94px;
+    width: 1200px;
+}
+
+.about-games__section{
+    padding-bottom: 72px;
+}
+
+.about-games__title{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 64px;
+    color: #ffffff;
+    padding-bottom: 24px;
+}
+
+.about-games__description{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+}
+
+/* Конец описания игр */
+
+/* Карточки игр */
+.about-games__cards{
+    display: flex;
+    gap: 32px;
+}
+
+.about-games__card{
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+}
+
+
+.about-games__card-link{
+    text-decoration: none;
+    color: #000;
+}
+
+.about-games__card-section{
+    width: 378px;
+    height: 473px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.about-games__card-long{
+    width: 378px;
+    height: 551px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.about-games__card-center{
+    width: 378px;
+    height: 512px;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.about-games__card-image{
+    width: 378px;
+    height: 314px;
+    border-radius: 30px;
+}
+
+.about-games__games{
+    box-sizing: border-box;
+    background: #F7F7F7;
+    width: 108px;
+    height: 36px;
+    border-radius: 52px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.about-games__card-content{
+    margin-left: 32px;
+    margin-top: 32px;
+}
+
+.about-games__card-title{
+    padding-top: 16px;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 32px;
+}

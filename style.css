@@ -52,11 +52,11 @@ html {
 }
 
  .top__text{
+    color: rgba(32, 32, 39, 1);
     font-family: 'Montserrat';
-    font-weight: 700;
-    font-style: Bold;
     font-size: 64px;
-    padding-bottom: 24px;
+    font-weight: 700;
+    line-height: 78px;
  }
 
  .top__description{
@@ -70,8 +70,8 @@ html {
  .top__button-custom{
     display: inline-block;
     width: 247px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-family: 'Montserrat';
     font-weight: 600;
     font-size: 24px;
@@ -83,9 +83,9 @@ html {
  }
 
  .top__button-custom:hover{
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
         cursor: pointer;
-        color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
 }
 
 /* Конец верхней части сайта */
@@ -117,24 +117,22 @@ html {
 
 /* Описание игр */
 
+
 .about-games__star {
   position: relative;
+  z-index: 2;
 }
 
-.about-games__star img {
+.about-games__star--small img {
   position: absolute;
   top: 770px;
-  left: 25px;
+   left: -95px;
 }
 
-.about-games__star-2 {
-  position: relative;
-}
-
-.about-games__star-2 img {
+.about-games__star--big img {
   position: absolute;
   top: 822px;
-  left: 40px;
+  left: -80px;
 }
 
 .about-games{
@@ -219,6 +217,7 @@ html {
 }
 
 .about-games__games{
+    font-family: 'Montserrat';
     box-sizing: border-box;
     background: #F7F7F7;
     width: 108px;

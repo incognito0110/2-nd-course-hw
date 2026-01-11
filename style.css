@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -41,6 +42,10 @@ html {
  .top__content{
     padding-top: 196px;
     width: 769px;
+ }
+
+ .top__content-space{
+    display: none;
  }
 
 .top__decor img {
@@ -246,4 +251,569 @@ html {
     z-index: 1;
 }
 
+/* mini игры */
+
+.mini-games{
+    background-color: #202027;
+    height: 3500px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.mini-games__text{
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Montserrat';
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    padding-top: 46px;
+    padding-bottom: 72px;
+}
+
+.mini-games__card{
+    background-color: #fff;
+    max-width: 1200px;
+    height: 500px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mini-games__left{
+    padding-left: 48px;
+    max-width: 600px;
+}
+
+.mini-games__flip{
+    flex-direction: row-reverse;
+}
+
+.mini-games__name{
+    color: rgba(32, 32, 39, 1);
+    font-family:'Montserrat';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    padding-top: 48px;
+    padding-bottom: 24px;
+}
+
+.mini-games__description{
+    color: rgba(32, 32, 39, 1);
+    font-family:'Montserrat';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    padding-bottom: 36px;
+}
+
+.mini-games__button-custom{
+    display: inline-block;
+    width: 247px;
+    background-color: rgba(32, 32, 39, 1);
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    line-height: 66px;
+    border-radius: 60px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.mini-games__button-custom:hover {
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+.mini-games__image{
+    height: 500px;
+}
+
+.mobile-games__image{
+    width: 343px;
+}
+
+.footer{
+    height: 150px;
+    background: rgba(189, 237, 53, 1);
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.footer__text{
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+}
+
+
+
+
+/* блок для мобилки*/
+
+.mobile-games{
+    display: none;
+}
+
+.mobile-games{
+    background-color: #202027;
+    height: 3740px;
+}
+
+.mobile-games__text{
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Montserrat';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49px;
+    padding-top: 48px;
+    padding-bottom: 24px;
+}
+
+.mobile-games__card{
+    height: 529px;
+    width: 343px;
+    background: #ffffff;
+    border-radius: 27px;
+    margin-top: 24px;
+}
+
+.mobile-games__big{
+    height: 567px;
+    width: 343px;
+}
+
+.mobile-games__long{
+    height: 606px;
+    width: 343px;
+}
+
+.mobile-games__ober-long{
+    height: 627px;
+    width: 343px;
+}
+
+.mobile-games__name{
+    color: rgba(32, 32, 39, 1);
+    font-family: 'Montserrat';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    padding-top: 29px;
+    padding-bottom: 16px;
+    padding-left: 29px;
+}
+
+.mobile-games__description{
+    width: 285px;
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-bottom: 32px;
+    padding-left: 29px;
+}
+
+.mobile-games__button{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-games__button-custom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 285px;
+    height: 55px;
+    background-color: rgba(32, 32, 39, 1);
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 60px;
+    text-decoration: none;
+}
+.top__decor-mobile{
+    display: none;
+}
+
+.mobile-games{
+    display: none;
+}
+
+.mobile-games-nav{
+    display: none;
+}
+
+
+/* mobile */ 
+
+
+@media (max-width: 813px) {
+
+    .mini-games-nav{
+        display: none;
+    }
+
+    .mobile-games-nav__container{
+        display: flex;
+        align-items: center;
+        gap: 27px;
+    }
+
+    .mobile-games-nav__container > div{
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile-games-nav{
+        height: 51px;
+        background: #BCEC30;
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile-games-nav__separator{
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile-games-nav__item{
+        color: rgba(32, 32, 39, 1);
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+        padding-right: 27px;
+        display: flex;
+        align-items: center;
+    }
+
+    /* Звезды */
+
+    .top__star {
+        position: absolute;
+    }
+
+    /* Positions */
+    .top__star-1 { 
+        width: 21px;
+        top: 64px; 
+        left: 91px; 
+    }
+    .top__star-2 { 
+        width: 35px;
+        top: 97px; 
+        left: 37px; }
+    .top__star-3 { 
+        width: 18px;
+        top: 557px; 
+        left: 272px; }
+    .top__star-4 { 
+        width: 39px;
+        height: 41px;
+        top: 580px; 
+        left: 303px; }
+    /* Конец звезд */
+
+     .center {
+  padding-left: max(16px, calc(50% - 600px));
+  padding-right: max(16px, calc(50% - 600px));
+    }   
+
+    .top{
+        display: flex;
+        justify-content: center;
+    }
+
+    .top__content{
+        padding-top: 147px;
+        max-width: 296px;
+        
+    }
+
+    .mini-games-nav__container{
+        padding-top: 16px;
+    }
+
+
+    .top__content-space{
+        display: block;
+    }
+
+    .top__text{
+        color: rgba(32, 32, 39, 1);
+        font-family: 'Montserrat';
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 49px;
+        text-align: center;
+        padding-bottom: 24px;
+    }
+
+    .top__description{
+        color: rgba(32, 32, 39, 1);
+        font-family:'Montserrat';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: center;
+        padding-bottom: 36px;
+    }
+
+    .top__button-custom{
+        display: inline-block;
+        width: 285px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 16px;
+        text-align: center;
+        border-radius: 60px;
+        text-decoration: none;
+    }
+
+    .top__decor-mobile{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .top__decor{
+        display: none;
+    }
+
+    .mini-games{
+        display: none;
+    }
+
+    .mobile-games{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .about-games {
+        display: none;
+    }
+
+    .footer{
+        height: 100px;
+    }
+    .footer__text{
+        color: rgba(0, 0, 0, 1);
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: center;
+    }
+}
+
+/* tablet */
+
+@media (min-width: 814px) and (max-width: 1024px) {
+    .mini-games-nav{
+        display: none;
+    }
+
+    .mobile-games-nav{
+        height: 51px;
+        background: #BCEC30;
+        display: flex;
+        align-items: center;
+    }
+
+    .top__content{
+        padding-top: 120px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+        max-width: 600px;
+        box-sizing: border-box;
+    }
+
+    .top__star-2{
+        top: 2%;
+        left: 20px;
+    }
+
+    .mobile-games-nav__container{
+        display: flex;
+        align-items: center;
+        gap: 27px;
+    }
+
+    .mobile-games-nav__container > div{
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile-games-nav__separator{
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile-games-nav__item{
+        color: rgba(32, 32, 39, 1);
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+        padding-right: 27px;
+        display: flex;
+        align-items: center;
+    }
+
+    .about-games{
+        height: auto;
+        min-height: 1470px;
+        padding-bottom: 50px;
+    }
+
+    .about-games__container{
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
+    }
+
+    .about-games__cards{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .about-games__card{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .about-games__card-section,
+    .about-games__card-long,
+    .about-games__card-center{
+        width: 350px;
+        height: 551px;
+    }
+
+    .about-games__card-image{
+        width: 350px;
+        height: auto;
+        max-height: 314px;
+        object-fit: cover;
+    }
+
+    .mini-games{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        box-sizing: border-box;
+        height: auto;
+    }
+
+    .mini-games__card{
+        max-width: calc(100% - 40px);
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+        border-radius: 30px;
+        overflow: hidden;
+    }
+
+    .mini-games__left{
+        padding-left: 24px;
+        width: 50%;
+        flex: 0 0 50%;
+        box-sizing: border-box;
+    }
+
+    .mini-games__name{
+        font-size: 28px;
+        line-height: 34px;
+        padding-top: 24px;
+        padding-bottom: 12px;
+    }
+
+    .mini-games__description{
+        font-size: 16px;
+        line-height: 22px;
+        padding-bottom: 20px;
+    }
+
+    .mini-games__button-custom{
+        width: 180px;
+        font-size: 16px;
+        line-height: 44px;
+    }
+
+    .mini-games__card > div:last-child{
+        width: 50%;
+        flex: 0 0 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .mini-games__image{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    .footer{
+        height: 75px;
+    }
+
+    .top__text{
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .top__description{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .about-games__title{
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .about-games__description{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .mini-games__text{
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .footer__text{
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
 

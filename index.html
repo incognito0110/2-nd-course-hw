@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -26,7 +26,7 @@
 </svg>
 
         <div class="top__content">
-            <h1 class="top__text">Добро пожаловать <br>на мой сайт мини-игр</h1>
+            <h1 class="top__text">Добро<br class="top__content-space"> пожаловать <br>на мой сайт<br class="top__content-space"> мини-игр</h1>
             <p class="top__description">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <strong>«Поехали!»</strong> и <strong>приступай</strong>.</p>
             <div class="top__button">
                 <a href="#about-games" class="top__button-custom">Поехали!</a>
@@ -35,6 +35,9 @@
         <div class="top__decor">
     <img src="./img/headerline.png" alt="star">
         </div> 
+        <div class="top__decor-mobile">
+    <img src="./img/Vector.png" alt="star">
+        </div> 
     </div>
 
 
@@ -42,28 +45,43 @@
         <div class="mini-games-nav__container">
             <div>
 <a href="#" class="mini-games-nav__item">ВИКТОРИНА</a>
-  <span class="mini-games-nav__separator"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <span class="mini-games-nav__separator "><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M18 0L22.8616 13.1384L36 18L22.8616 22.8616L18 36L13.1384 22.8616L0 18L13.1384 13.1384L18 0Z" fill="#202027"/>
   </svg></span>
             </div>
             <div>
-  <a href="#" class="mini-games-nav__item">УГАДАЙ ЧИСЛО</a>
-  <span class="mini-games-nav__separator"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <a href="#" class="mini-games-nav__item ">УГАДАЙ ЧИСЛО</a>
+  <span class="mini-games-nav__separator "><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M18 0L22.8616 13.1384L36 18L22.8616 22.8616L18 36L13.1384 22.8616L0 18L13.1384 13.1384L18 0Z" fill="#202027"/>
   </svg></span> 
             </div>
             <div>
-            <a href="#" class="mini-games-nav__item">ПЕРЕВЕРНИ ТЕКСТ</a>
-  <span class="mini-games-nav__separator"><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="#" class="mini-games-nav__item ">ПЕРЕВЕРНИ ТЕКСТ</a>
+  <span class="mini-games-nav__separator  "><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M18 0L22.8616 13.1384L36 18L22.8616 22.8616L18 36L13.1384 22.8616L0 18L13.1384 13.1384L18 0Z" fill="#202027"/>
   </svg></span>
             </div>
             <div>
-  <a href="#" class="mini-games-nav__item">ПРОСТАЯ А</a>
+  <a href="#" class="mini-games-nav__item ">ПРОСТАЯ А</a>
             </div>
         </div>
     </nav>
-    
+
+
+    <nav class="mobile-games-nav ">
+        <div class="mobile-games-nav__container">
+            <div>
+<a href="#" class="mobile-games-nav__item">ВИКТОРИНА</a>
+  <span class="mobile-games-nav__separator  "><svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M18 0L22.8616 13.1384L36 18L22.8616 22.8616L18 36L13.1384 22.8616L0 18L13.1384 13.1384L18 0Z" fill="#202027"/>
+  </svg></span>
+            </div>
+            <div>
+  <a href="#" class="mobile-games-nav__item mobile-games-nav__position">УГАДАЙ ЧИСЛО</a>
+            </div>  
+        </div> 
+    </nav>
+
 
     <div class="about-games center">
 <div class=" about-games__star about-games__star--small">
@@ -154,5 +172,160 @@
         </div>
 
     </div>
+    <div class="mini-games center">
+        <h1 class="mini-games__text">Мини-игры</h1>
+
+
+        <div class="mini-games__card">
+            <div class="mini-games__left">
+                <h3 class="mini-games__name">Угадай число</h3>
+                <p class="mini-games__description">Попробуй угадать случайное число от 1 до 100.</p>
+                <div class="mini-games__button">
+                <a href="#" class="mini-games__button-custom">Играть!</a>
+                </div>
+            </div>
+            <div><img class="mini-games__image" src="./img/miniGames1.png" alt="Обложка"></div>
+        </div>
+
+        <div class="mini-games__card mini-games__flip">
+            <div class="mini-games__left ">
+                <h3 class="mini-games__name">Простая арифметика</h3>
+                <p class="mini-games__description">Попробуй решить простые арифметические задачи.</p>
+                <div class="mini-games__button">
+                <a href="#" class="mini-games__button-custom">Играть!</a>
+                </div>
+            </div>
+            <div><img class="mini-games__image" src="./img/miniGames2.png" alt="Обложка"></div>
+        </div>
+
+        <div class="mini-games__card">
+            <div class="mini-games__left">
+                <h3 class="mini-games__name">Переверни текст</h3>
+                <p class="mini-games__description">Попробуй ввести текст, который  будет перевернут.</p>
+                <div class="mini-games__button">
+                <a href="#" class="mini-games__button-custom">Играть!</a>
+                </div>
+            </div>
+            <div><img class="mini-games__image" src="./img/miniGames3.png" alt="Обложка"></div>
+        </div>
+
+        <div class="mini-games__card mini-games__flip">
+            <div class="mini-games__left ">
+                <h3 class="mini-games__name">Камень,<br>ножницы,<br>бумага</h3>
+                <p class="mini-games__description">Сыграй в популярную игру против компьютера.</p>
+                <div class="mini-games__button">
+                <a href="#" class="mini-games__button-custom">Играть!</a>
+                </div>
+            </div>
+            <div><img class="mini-games__image" src="./img/miniGames4.png" alt="Обложка"></div>
+        </div>
+
+        <div class="mini-games__card">
+            <div class="mini-games__left">
+                <h3 class="mini-games__name">Простая<br>викторина</h3>
+                <p class="mini-games__description">Отвечай на вопросы викторины<br> с вариантами ответов.</p>
+                <div class="mini-games__button">
+                <a href="#" class="mini-games__button-custom">Играть!</a>
+                </div>
+            </div>
+            <div><img class="mini-games__image" src="./img/miniGames5.png" alt="Обложка"></div>
+        </div>
+
+        <div class="mini-games__card mini-games__flip">
+            <div class="mini-games__left ">
+                <h3 class="mini-games__name">Генератор<br>случайных<br>цветов</h3>
+                <p class="mini-games__description">Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+                <div class="mini-games__button">
+                <a href="#" class="mini-games__button-custom">Играть!</a>
+                </div>
+            </div>
+            <div><img class="mini-games__image" src="./img/miniGames6.png" alt="Обложка"></div>
+        </div>
+
+    </div>
+
+    
+<div class="mobile-games center">
+        <h1 class="mobile-games__text">Мини-игры</h1>
+
+        <div class="mobile-games__card">
+            <div class="mobile-games__left">
+                <div><img class="mobile-games__image" src="./img/miniGames1.png" alt="Обложка"></div>
+                <h3 class="mobile-games__name">Угадай число</h3>
+                <p class="mobile-games__description">Попробуй угадать случайное<br> число от 1 до 100.</p>
+                <div class="mobile-games__button">
+                <a href="#" class="mobile-games__button-custom">Играть!</a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="mobile-games__card mobile-games__big">
+            <div class="mobile-games__left">
+                <div><img class="mobile-games__image" src="./img/miniGames2.png" alt="Обложка"></div>
+                <h3 class="mobile-games__name">Простая <br>арифметика</h3>
+                <p class="mobile-games__description">Попробуй решить простые <br>арифметические задачи.</p>
+                <div class="mobile-games__button">
+                <a href="#" class="mobile-games__button-custom">Играть!</a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="mobile-games__card mobile-games__big">
+            <div class="mobile-games__left">
+                <div><img class="mobile-games__image" src="./img/miniGames3.png" alt="Обложка"></div>
+                <h3 class="mobile-games__name">Переверни<br> текст</h3>
+                <p class="mobile-games__description">Попробуй ввести текст, который <br>будет перевернут.</p>
+                <div class="mobile-games__button">
+                <a href="#" class="mobile-games__button-custom">Играть!</a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="mobile-games__card mobile-games__long">
+            <div class="mobile-games__left">
+                <div><img class="mobile-games__image" src="./img/miniGames4.png" alt="Обложка"></div>
+                <h3 class="mobile-games__name">Камень, <br>ножницы, <br>бумага</h3>
+                <p class="mobile-games__description">Сыграй в популярную игру против компьютера.</p>
+                <div class="mobile-games__button">
+                <a href="#" class="mobile-games__button-custom">Играть!</a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="mobile-games__card mobile-games__big">
+            <div class="mobile-games__left">
+                <div><img class="mobile-games__image" src="./img/miniGames5.png" alt="Обложка"></div>
+                <h3 class="mobile-games__name">Простая <br>викторина</h3>
+                <p class="mobile-games__description">Отвечай на вопросы викторины <br>с вариантами ответов.</p>
+                <div class="mobile-games__button">
+                <a href="#" class="mobile-games__button-custom">Играть!</a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="mobile-games__card mobile-games__ober-long">
+            <div class="mobile-games__left">
+                <div><img class="mobile-games__image" src="./img/miniGames4.png" alt="Обложка"></div>
+                <h3 class="mobile-games__name">Генератор<br>случайных<br>цветов</h3>
+                <p class="mobile-games__description">Игра, в которой при клике <br>на кнопку фон страницы меняется на случайный.</p>
+                <div class="mobile-games__button">
+                <a href="#" class="mobile-games__button-custom">Играть!</a>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <footer class="footer center">
+        <h3 class="footer__text">Все права защищены.</h3>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

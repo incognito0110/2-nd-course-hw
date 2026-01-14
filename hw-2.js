@@ -41,6 +41,8 @@
 // let monthNumber = prompt("Число месяца года");
 
 
+
+
 // switch (monthNumber) {
 //   case '1':
 //     alert('Зима');

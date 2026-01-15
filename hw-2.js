@@ -1,32 +1,39 @@
 /*задание 1*/
 
-// let answer = prompt("Введите пароль");
+// let password = 'пароль';
 
-// if (answer === "пароль" || answer === "пароль" ) {
-//     alert("Пароль введен верно");
+// let userPassword = prompt('Введите пароль');
+
+// if (userPassword === password) {
+//     alert('Пароль введен верно');
 // } else {
-//     alert("Пароль введен неправильно");
+//     alert('Пароль введен неправильно');
 // }
 
 /*задание 2*/
 
-// let c = 25;
+// let c = 0;
+// console.log(c > 0 && c < 10 ? "Верно" : "Неверно");
 
-// if (c > 0 && c < 10) {
-//     alert("Верно");
-// } else {
-//     alert("Неверно");
-// }
+// c = 10;
+// console.log(c > 0 && c < 10 ? "Верно" : "Неверно");
+
+// c = -3;
+// console.log(c > 0 && c < 10 ? "Верно" : "Неверно");
+
+// c = 2;
+// console.log(c > 0 && c < 10 ? "Верно" : "Неверно");
+
 
 /*задание 3*/
 
 // let d = 1;
-// let b = 1001;
+// let e = 101;
 
-// if (d > 100 || b > 100) {
-//     alert("Верно")
+// if (d > 100 || e > 100) {
+//     console.log("Верно");
 // } else {
-//     alert("Неверно")
+//     console.log("Неверно");
 // }
 
 /*задание 4*/
@@ -38,50 +45,37 @@
 
 /*задание 5*/
 
-// let monthNumber = prompt("Число месяца года");
+// let monthNumber = 1;
 
+// if (monthNumber > 13) {
 
+// } else {
+//     switch (monthNumber) {
+//         case 12:
+//         case 1:
+//         case 2:
+//             console.log("зима");
+//             break;
+//         case 3:
+//         case 4:
+//         case 5:
+//             console.log("весна");
+//             break;
 
+//         case 6:
+//         case 7:
+//         case 8:
+//             console.log("лето");
+//             break;
 
-// switch (monthNumber) {
-//   case '1':
-//     alert('Зима');
-//     break;
-//   case '2':
-//     alert('Зима');
-//     break;
-//   case '3':
-//     alert('Весна');
-//     break;
-//   case '4':
-//     alert('Весна');
-//     break;
-//   case '5':
-//     alert('Весна');
-//     break;
-//   case '6':
-//     alert('Лето');
-//     break;
-//   case '7':
-//     alert('Лето');
-//     break;
-//   case '8':
-//     alert('Лето');
-//     break;
-//   case '9':
-//     alert('Осень');
-//     break;
-//   case '10':
-//     alert('Осень');
-//     break;
-//   case '11':
-//     alert('Осень');
-//     break;
-//   case '12':
-//     alert('Зима');
-//     break;
-
-//   default:
-//     alert('Некорректный номер месяца. Месяц должен быть от 1 до 12.');
-//     break;
+//         case 9:
+//         case 10:
+//         case 11:
+//             console.log("осень");
+//             break;
+//         default:
+//             console.log("Неверный номер месяца");
+//     }
 // }
+
+

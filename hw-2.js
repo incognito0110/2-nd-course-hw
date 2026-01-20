@@ -45,7 +45,7 @@
 
 /*задание 5*/
 
-// let monthNumber = 13;
+// let monthNumber = 12;
 
 // if (monthNumber >= 13) {
 //   console.log("Неверный номер месяца. Программа остановлена.");

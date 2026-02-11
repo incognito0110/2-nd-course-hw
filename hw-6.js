@@ -169,6 +169,5 @@ alert(`Количество правильных ответов: ${correctCount}
 //     return `Дата: ${day} ${months[month]} ${year} — это ${daysOfWeek[dayOfWeek]}.\nВремя: ${hours}:${minutes}:${seconds}`;
 // }
 
-
 // const currentDate = new Date();
 // console.log(formatDate(currentDate));

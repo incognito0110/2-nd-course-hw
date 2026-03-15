@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!--  Задание 1  -->
+    <div>
+        <h1 id = "header">Скрывать и показывать заголовок</h1>
+        <button id = "toggleBtn">Нажми</button>
+    </div>
+
+    <!--  Задание 2  -->
+    <div>
+        <p class="paragraph">Изменение стиля элемента</p>
+        <button id = "Button">Нажми</button>
+    </div>
+
+    <!-- Задание 3 -->
+    <div>
+        <h1 class="heading">Скрывать и показывать заголовок</h1>
+        <button id = "btn">Нажми</button>
+    </div>
+
+    <!-- Задание 4 -->
+     <div>
+        <p class="description">Поиск и изменение элементов по классу</p>
+        <p class="description">Поиск и изменение элементов по классу</p>
+        <p class="description">Поиск и изменение элементов по классу</p>
+        <button id = "click">Нажми</button>
+    </div>
+
+    <!-- Задание 5 -->
+        <div>
+    <p class="description__new">Этот текст изменится</p>
+    <p>Этот текст НЕ изменится</p>
+    <p class="description__new">Этот текст тоже изменится</p>
+    <p class="description__new">И этот тоже</p>
+    <p>Обычный текст без изменений</p>
+        </div>
+    
+
+    <!-- Задание 6 -->
+        <div>
+    <button class="btn__add">Добавить </button>
+        </div>
+
+    <!-- Задание 7 -->
+    <div>
+        <P class="description__remove">Первый абзац</P>
+        <P class="description__remove">Lorem ipsum dolor sit amet.</P>
+        <P class="description__remove">Lorem ipsum dolor sit amet consectetur adipisicing.</P>
+        <P class="description__remove">Lorem ipsum dolor sit amet.</P>
+        <P class="description__remove">Lorem ipsum dolor sit amet.</P>
+        <button class="btn__remove">Удалить</button>
+    </div>
+    
+
+ <script>
+    // Задание 1
+    const headerEl = document.querySelector('#header');
+    const toggleBtnEl = document.querySelector('#toggleBtn');
+
+    toggleBtnEl.addEventListener('click', function () {
+            headerEl.classList.toggle('hidden');
+        });
+
+    // Задание 2
+        const paragraphEl = document.querySelector('.paragraph');
+        const ButtonEl = document.querySelector('#Button');
+
+        ButtonEl.addEventListener('click', function () {
+            paragraphEl.style.color = 'blue';
+        });
+
+    // Задание 3
+        const headingEL = document.querySelector('.heading');
+        const btnEl = document.querySelector('#btn');
+
+        btnEl.addEventListener('click', function () {
+            headingEL.textContent = 'Привет, мир!';
+        });
+
+    // Задание 4
+    const descriptionEl = document.querySelectorAll('.description');
+    const clickEl = document.querySelector('#click');
+
+    clickEl.addEventListener('click', function () {
+        
+        descriptionEl.forEach(function(element) {
+            element.textContent = 'Измененный текст!';
+        });
+    });
+
+    // Задание 5
+    const descriptionElements = document.querySelectorAll('.description__new');
+
+        descriptionElements.forEach(function(element) {
+            element.textContent = 'Новый текст';
+        });
+
+    console.log('Текст изменен у ' + descriptionElements.length + ' элементов.');
+
+    // Задание 6
+    const btnAdd = document.querySelector('.btn__add');
+
+    btnAdd.addEventListener('click', function () {
+        const newParagraph = document.createElement('p');
+        newParagraph.textContent = 'Новый абзац';
+        document.body.appendChild(newParagraph);
+    });
+
+    // Задание 7
+
+    const btnRemove = document.querySelector('.btn__remove');
+
+    btnRemove.addEventListener('click', function () {
+        const descriptionElements = document.querySelector('.description__remove');
+        descriptionElements.remove();
+    });
+
+
+ </script>   
+</body>
+</html>

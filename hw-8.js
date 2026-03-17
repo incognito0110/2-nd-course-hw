@@ -27,3 +27,12 @@ if (generatorBtn) {
         }
     });
 }
+
+/* дублирование блока mini-games-nav__container */
+
+document.addEventListener('DOMContentLoaded', function() {
+    const container = document.querySelector('.mini-games-nav__container');
+    if (container) {
+      container.innerHTML += container.innerHTML;
+    }
+  });

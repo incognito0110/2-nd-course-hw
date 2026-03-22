@@ -13,6 +13,7 @@ html {
   padding-right: calc(50% - 600px);
 }
 
+
 /* Звезды */
 
 .top__decor-mobile{
@@ -100,27 +101,55 @@ html {
 /* Конец верхней части сайта */
 
 
-/* Навигация мини-игр */
+/* анимация скрона влево */
 
-.mini-games-nav{
-    background-color: #BCEC30;
-    height: 90px;
-    display: flex;
+.mini-games-nav {
+  background-color: #BCEC30;
+  height: 90px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  display: flex;
 }
 
-.mini-games-nav__item{
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 30px;
-    color: #000;
-    text-decoration: none;
-    padding-right: 51px;
+.mini-games-nav__container {
+  display: flex;
+  gap: 51px;
+  padding-top: 24px;
+  animation: strip-move 10s linear infinite;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
-.mini-games-nav__container{
-    padding-top: 24px;
-    display: flex;
-    gap: 51px;
+.mini-games-nav__item {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 30px;
+  color: #000;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.mini-games-nav__separator {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 51px;
+}
+
+@keyframes strip-move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.mini-games-nav__container:hover {
+  animation-play-state: paused;
 }
 /* Конец навигации мини-игр */
 
@@ -879,3 +908,4 @@ html {
         line-height: 22px;
     }
 }
+

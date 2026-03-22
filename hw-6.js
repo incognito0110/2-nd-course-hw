@@ -44,6 +44,11 @@ for (let i = 0; i < quiz.length; i++) {
   let optionsText = question.question + "\n\n" + question.options.join("\n") + "\n\nВведите номер ответа (1, 2 или 3):";
   
   let userAnswer = prompt(optionsText);
+
+  if (userAnswer === null) {
+        alert("Игра отменена.");
+        return;
+      }
   
   if (userAnswer !== null) {
     userAnswer = Number(userAnswer);

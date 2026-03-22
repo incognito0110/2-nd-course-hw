@@ -5,6 +5,11 @@ game5.addEventListener("click", function (event) {
 
 let userChoice = prompt("Выберите: камень, ножницы или бумага");
 
+if (userChoice === null) {
+    alert("Игра отменена.");
+    return;
+}
+
 userChoice = userChoice.toLowerCase();
 
 let options = ["камень", "ножницы", "бумага"];
